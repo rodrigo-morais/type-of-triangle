@@ -1,0 +1,20 @@
+{
+  "name": "type-polygon",
+  "version": "0.0.1",
+  "description": "This app gets the sizes and return the type of a polygon.",
+  "main": "index.js",
+  "author": "Rodrigo Morais <morais.rm@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "http-server --p 8000",
+    "test": "NODE_ENV=test jest --config=jest.json --coverage"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "http-server": "^0.11.1",
+    "jest": "^23.6.0"
+  }
+}
