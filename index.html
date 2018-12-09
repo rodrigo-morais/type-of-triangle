@@ -5,13 +5,33 @@
 		<meta name="viewport" content="width=device-width"/>
 
     <link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-11.1.0.min.css"/>
+    <link rel="stylesheet" href="./assets/stylesheets/App.css"/>
 	</head>
 	<body>
 		<header data-ts="TopBar"></header>
 		<main data-ts="Main">
-			<div data-ts="MainContent">
-				<h1>Main content</h1>
-			</div>
+			<section data-ts="MainContent" class="main-content">
+				<h1>Type of triangle</h1>
+        <form data-ts="Form">
+          <fieldset>
+            <label>Side 1:</label>
+            <input type="number"/>
+          </fieldset>
+          <fieldset>
+            <label>Side 2:</label>
+            <input type="number"/>
+          </fieldset>
+          <fieldset>
+            <label>Side 3:</label>
+            <input type="number"/>
+          </fieldset>
+          <fieldset>
+            <button data-ts="Button" class="ts-primary">
+              <span>Calculate</span>
+            </button>
+          </fieldset>
+        </form>
+			</section>
 		</main>
 
     <script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-11.1.0.min.js"></script>

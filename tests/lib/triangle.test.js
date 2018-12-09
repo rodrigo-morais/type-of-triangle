@@ -2,20 +2,20 @@ import getTringleType from '../../src/lib/triangle'
 
 describe('#getTriangleType', () => {
   describe('when sides are 0', () => {
-    it('returns INVALID', () => {
-      expect(getTringleType(0, 0, 0)).toEqual('INVALID')
+    it('returns INVALID TRIANGLE', () => {
+      expect(getTringleType(0, 0, 0)).toEqual('INVALID TRIANGLE')
     })
   })
 
   describe('when at least one side is 0', () => {
-    it('returns INVALID', () => {
-      expect(getTringleType(4, 0, 3)).toEqual('INVALID')
+    it('returns INVALID TRIANGLE', () => {
+      expect(getTringleType(4, 0, 3)).toEqual('INVALID TRIANGLE')
     })
   })
 
   describe('when one side is bigger than the sum of the other two sides', () => {
-    it('returns INVALID', () => {
-      expect(getTringleType(4, 10, 3)).toEqual('INVALID')
+    it('returns INVALID TRIANGLE', () => {
+      expect(getTringleType(4, 10, 3)).toEqual('INVALID TRIANGLE')
     })
   })
 

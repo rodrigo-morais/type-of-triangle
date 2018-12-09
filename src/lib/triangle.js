@@ -10,6 +10,6 @@ const isIsosceles = (a, b, c) => a === b || a === c || b === c
 
 const getTriangleType = (a, b, c) => isValid(a, b, c) ?
   isEquilateral(a, b, c) && 'EQUILATERAL' || isIsosceles(a, b, c) && 'ISOSCELES' || 'SCALENE' :
-  'INVALID'
+  'INVALID TRIANGLE'
 
 export default getTriangleType
