@@ -7,10 +7,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build": "rm -Rf dist && babel src/view.js -d dist/",
     "start": "http-server --p 8000",
     "test": "NODE_ENV=test jest --config=jest.json --coverage"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",

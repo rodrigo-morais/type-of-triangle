@@ -1,4 +1,4 @@
-import getTringleType from '../../src/lib/triangle'
+import getTringleType from '../../../src/lib/triangle'
 
 describe('#getTriangleType', () => {
   describe('when sides are 0', () => {

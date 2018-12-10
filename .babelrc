@@ -1,4 +1,18 @@
 {
+  "presets": [
+    ["env", {
+      "loose": true,
+      "modules": false,
+      "targets": {
+        "browsers": [
+          "last 2 firefox versions",
+          "last 2 chrome versions",
+          "safari >= 10",
+          "ie 11"
+        ]
+      }
+    }]
+  ],
   "env": {
     "test": {
       "presets": [
